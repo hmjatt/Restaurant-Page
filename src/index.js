@@ -1,1 +1,3 @@
-console.log(123);
+import generatePage from "./generatePage";
+
+console.log(generatePage);
