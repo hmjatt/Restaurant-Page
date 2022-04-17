@@ -1,4 +1,5 @@
 const path = require("path");
+const HTMLWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     mode: "development",
@@ -8,6 +9,7 @@ module.exports = {
     output: {
         filename: "[name].js",
         path: path.resolve(__dirname, "dist"),
+        filename: "[name][contenthash].js",
     },
     module: {
         rules: [
@@ -21,4 +23,11 @@ module.exports = {
             },
         ],
     },
+    plugins: [
+        new HTMLWebpackPlugin({
+            title: "Restaurant App",
+            filename: "index.html",
+            template: "src/template.html",
+        }),
+    ],
 };
