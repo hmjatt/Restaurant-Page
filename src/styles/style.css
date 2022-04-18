@@ -1,7 +1,18 @@
 :root {
     --light-blue: #0A95FF;
-    --dark-blue: #230AFF;
-    --purple: #7766FF;
-    --lilac: #AAA0FF;
-    --khaki: #ffde73;
+    --royal-blue: #4345e7;
+    --livid-brown: #371D32;
+    --orange: #ff5709;
+    --khaki: #fff1da;
+    --off-white: #fff9f1;
+    --white: #ffffff;
   }
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    line-height: 40px;
+}
