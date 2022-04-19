@@ -20,6 +20,7 @@ body {
 
 #page1Container {
     background-color: var(--khaki);
+    position: relative;
 }
 
 h1 {
@@ -102,7 +103,7 @@ section {
 }
 
 #sectionButtons {
-    padding-left: 180px;
+    padding: 0px 0px 100px 180px ;
 }
 
 #sectionButtons button {
@@ -149,6 +150,20 @@ section {
 #sectionButtons button img {
     height: 20px;
     width: 20px;
+}
+
+#dragonGif {
+    position: absolute;
+    top: 15vh;
+    left: 65vw;
+    width: 500px;
+}
+
+
+#ramenGif {
+    position: absolute;
+    top: 50vh;
+    left: 70vw;
 }
 
 #page1Footer {
