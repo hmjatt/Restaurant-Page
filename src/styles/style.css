@@ -3,6 +3,7 @@
     --royal-blue: #4345e7;
     --livid-brown: #371D32;
     --orange: #ff5709;
+    --orange-dark: #e44901;
     --khaki: #fff1da;
     --off-white: #fff9f1;
     --white: #ffffff;
@@ -11,9 +12,169 @@
 
 html {
     font-family: 'Josefin Sans', sans-serif;
+    color: var(--livid-brown);
+}
+body {
+    margin: 0px;
+}
+
+#page1Container {
+    background-color: var(--khaki);
 }
 
 h1 {
     font-family: 'Bungee Shade', cursive;
-    line-height: 40px;
+    line-height: 100px;
+    font-size: 80px;
+    padding-left: 200px;
+}
+
+
+nav {
+    display: flex;
+    padding: 50px 80px 50px 80px;
+}
+
+nav img {
+    height: 60px;
+    border-radius: 10px;
+}
+
+#navLeft {
+    display: flex;
+}
+
+#navLeft h4 {
+    padding-left: 30px;
+    font-size: 30px;
+    margin: 0px;
+    margin-top: -10px;
+    font-family: 'Bungee Shade', cursive;
+}
+
+#navMiddle {
+    display: flex;
+    flex-grow: 2;
+    padding-left: 120px;
+}
+
+#navMiddle h4 {
+    font-weight: 400;
+    font-size: 28px;
+    margin: 19px;
+}
+
+#navRight {
+    display: flex;
+}
+
+#navRight #github, #navRight #bag {
+    padding-left: 30px;
+}
+
+#bagItems {
+    margin: -70px -10px 5px 0px;
+    position: relative;
+}
+
+#bagItems p {
+    color: var(--white);
+    background: var(--orange);
+    border-radius: 20px;
+    width: 6px;
+    height: 20px;
+    padding: 6px 10px 0px 12px;
+    margin: -70px 10px 15px 47px;
+   
+}
+
+main {
+    padding-left: 200px;
+}
+
+main h6 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+section {
+    display: flex;
+}
+
+#sectionButtons {
+    padding-left: 180px;
+}
+
+#sectionButtons button {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Josefin Sans', sans-serif;
+    align-self: center;
+    font-size: 26px;
+    width: 300px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 55px;
+    border: none;
+    cursor: pointer;
+}
+
+#sectionButtons button h5 {
+    margin: 30px 0px;
+}
+
+#orderNowBtn {
+    background-color: var(--orange);
+    box-shadow: 0 22px 48px -4px rgb(219, 94, 45);
+    color: var(--white);
+}
+
+#orderNowBtn img {
+    background: var(--orange-dark);
+    padding: 30px;
+    border-radius: 100px;
+    margin-right: -50px;
+}
+
+#menuBtn {
+    background-color: var(--white);
+    color: var(--livid-brown);
+    box-shadow: 0 22px 48px -4px rgb(201, 195, 193);
+}
+
+#menuBtn img {
+    margin: 28px -30px 0px 0px;
+}
+
+#sectionButtons button img {
+    height: 20px;
+    width: 20px;
+}
+
+#page1Footer {
+    background-color: var(--off-white);
+    display: flex;
+    justify-content: center;
+}
+
+#page1Footer div {
+    margin: 100px;
+    text-align: center;
+}
+
+#page1Footer img {
+    height: 25px;
+    padding: 0px 0px 10px 5px;
+} 
+
+#page1Footer h3 {
+    font-size: 58px;
+    margin: 20px 0px;
+    
+}
+
+#page1Footer h6 {
+    font-size: 26px;
+    font-weight: 300;
+    margin: 0px;
 }

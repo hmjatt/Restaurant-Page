@@ -6,66 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant App</title>
     <meta name="author" content="Harmeet Matharoo">
-    <!-- <link rel="icon" sizes="32x32" href="images/restaurant.png"> -->
+    <link rel="icon" sizes="32x32" href="../src/images/svg/japan-logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Josefin+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../src/styles/style.css">
 </head>
 <body>
     <div id="content">
-        <nav>
-            <h4 id="logo">Logo</h4>
-            <h4 id="about">About</h4>
-            <h4 id="Menu">Menu</h4>
-            <h4 id="contact">Contact</h4>
-            <h4 id="cart">Cart</h4>
-            <h4 id="github"><img src="../src/images/github.png" alt="github"></h4>
-        </nav>
+        <div id="page1Container">
+            <nav>
+                <div id="navLeft">
+                    <img src="../src/images/svg/japan-logo.svg" alt="logo">
+                    <h4>CUISINE</h4>
+                </div>
+                <div id="navMiddle">
+                    <h4 id="about">About</h4>
+                    <h4 id="Menu">Menu</h4>
+                    <h4 id="contact">Contact</h4>
+                </div>
+                <div id="navRight">                 
+                    <div id="bag">
+                        <img id="bagLogo" src="../src/images/svg/shopping-bag.svg" alt="shopping-bag">
+                        <div id="bagItems"><p>1</p></div>
+                    </div>
+                    <div id="github"><img id="githubLogo" src="../src/images/github.png" alt="github"></div>
+                </div>
 
-        <section>
-            <h1 id="restaurantName">Japanese <br> Cuisine</h1>
-        </section>
-        
-        <main>
-            <article>
-                <h6>At Japanese Cuisine we strive to bring people <br> the best Japanese food prepared using the freshest<br> and best ingredients.</h6>
-            </article>
-        </main>
-
-        <section>
-            <button id="orderNowBtn">
-                <h5>Order Now</h5>
-                <h5>Right Arrow</h5>
-            </button>
-            <button id="MenuBtn">
-                <h5>Menu</h5>
-                <h5>Right Arrow</h5>
-            </button>
-        </section>
-
-        <aside>
-            <h1 id="vectorPage1">Page 1 Vector</h1>
-        </aside>
-
-        <section>
-            <div id="footItem1">
-                <h3>18000</h3>
-                <h6>Lorem</h6>
-            </div>
-            <div id="footItem2">
-                <h3>4.5 *</h3>
-                <h6>Lorem</h6>
-            </div>
-            <div id="footItem3">
-                <h3>456</h3>
-                <h6>Lorem</h6>
-            </div>
-            <div id="footItem4">
-                <h3>97 %</h3>
-                <h6>Lorem</h6>
-            </div>
-        </section>
+            </nav>
+    
+            <section>
+                <h1 id="restaurantName">Japanese <br> Cuisine</h1>
+            </section>
+            
+            <main>
+                <article>
+                    <h6>At Japanese Cuisine we strive to bring people <br> the best Japanese food prepared using the freshest<br> and best ingredients.</h6>
+                </article>
+            </main>
+    
+            <section id="sectionButtons">
+                <button id="orderNowBtn">
+                    <h5>Order Now</h5>
+                    <img src="../src/images/svg/right-arrow-white.svg" alt="right-arrow">
+                </button>
+                <button id="menuBtn">
+                    <h5>Menu</h5>
+                    <img src="../src/images/svg/right-arrow-livid-brown.svg" alt="right-arrow">
+                </button>
+            </section>
+    
+            <aside>
+                <h1 id="vectorPage1">Page 1 Vector</h1>
+            </aside>
+    
+            <section id="page1Footer">
+                <div id="footItem1">
+                    <h3>18000</h3>
+                    <h6>Orders Delivered</h6>
+                </div>
+                <div id="footItem2">
+                    <h3>4.5<img src="../src/images/svg/star.svg" alt="rating-star"></h3>
+                    <h6>Google Score</h6>
+                </div>
+                <div id="footItem3">
+                    <h3>456</h3>
+                    <h6>Orders this week</h6>
+                </div>
+                <div id="footItem4">
+                    <h3>97 %</h3>
+                    <h6>Natural products we use</h6>
+                </div>
+            </section>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
