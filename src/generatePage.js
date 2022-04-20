@@ -58,7 +58,7 @@ function generatePage() {
     let bagItemsDiv = document.createElement("div");
     bagItemsDiv.id = "bagItems";
     let bagItemsP = document.createElement("p");
-    bagItemsP.innerText = "2";
+    bagItemsP.innerText = "1";
     bagItemsDiv.appendChild(bagItemsP);
     bag.append(bagLogoImg, bagItemsDiv);
 
@@ -78,6 +78,22 @@ function generatePage() {
     
     navEle.append(navLeft, navMiddle, navRight);
     //-------for navEle-------//
+
+
+    //-------for sectionNameEle-------//
+    let restaurantName = document.createElement("h1");
+    let restaurantNamediv1 = document.createElement("div");
+    let restaurantNamediv2 = document.createElement("div");
+    let br = document.createElement("br");
+    restaurantName.id = "restaurantName";
+    restaurantNamediv1.innerText = "Japanese";
+    restaurantNamediv2.innerText = "Cuisine";
+    restaurantName.append(restaurantNamediv1, br, restaurantNamediv2);
+
+
+    sectionNameEle.appendChild(restaurantName);
+    //-------for sectionNameEle-------//
+
 
     page1Container.append(navEle, sectionNameEle, asideEle, articleEle, sectionButtonsEle, sectionFooterEle, sectionAttrEle);
 
