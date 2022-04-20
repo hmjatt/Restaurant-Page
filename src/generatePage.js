@@ -8,7 +8,7 @@ function generatePage() {
     
     
    
-    let articleEle = document.createElement("article");
+    
     let sectionButtonsEle = document.createElement("section");
     let sectionFooterEle = document.createElement("section");
     let sectionAttrEle = document.createElement("section");
@@ -99,7 +99,6 @@ function generatePage() {
     restaurantNamediv2.innerText = "Cuisine";
     restaurantName.append(restaurantNamediv1, br, restaurantNamediv2);
 
-
     sectionNameEle.appendChild(restaurantName);
 
     //-------for sectionNameEle-------//
@@ -124,17 +123,33 @@ function generatePage() {
     ramenImg.alt = "ramen-img";
 
     asideEle.append(dragonGif, sushiImg, ramenImg);
-    //             <aside>
-//                 <img src="../src/images/gif/dragon.gif" alt="dragon" id="dragonGif">
-//                 <img src="../src/images/sushi.png" alt="sushi-img" id="sushiImg">
-//                 <img src="../src/images/ramen.png" alt="ramen-img" id="ramenImg">
-//             </aside>
-
 
     //-------for asideEle-------//
 
 
-    page1Container.append(navEle, sectionNameEle, asideEle, articleEle, sectionButtonsEle, sectionFooterEle, sectionAttrEle);
+
+    //-------for mainEle-------//
+
+    let mainEle = document.createElement("main");
+
+    let mainEleArticle = document.createElement("article");
+    let mainEleArticleH6 = document.createElement("h6");
+    let mainEleArticleDiv1 = document.createElement("div");
+    mainEleArticleDiv1.innerText = "At Japanese Cuisine we strive to bring people";
+    let mainEleArticleDiv2 = document.createElement("div");
+    mainEleArticleDiv2.innerText = "the best Japanese food prepared using the freshest";
+    let mainEleArticleDiv3 = document.createElement("div");
+    mainEleArticleDiv3.innerText = "and best ingredients.";
+
+    mainEleArticleH6.append(mainEleArticleDiv1, mainEleArticleDiv2, mainEleArticleDiv3);
+    mainEleArticle.appendChild(mainEleArticleH6);
+
+    mainEle.appendChild(mainEleArticle);
+
+    //-------for mainEle-------//
+
+
+    page1Container.append(navEle, sectionNameEle, asideEle, mainEle, sectionButtonsEle, sectionFooterEle, sectionAttrEle);
 
     content.appendChild(page1Container);
 
