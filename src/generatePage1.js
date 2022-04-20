@@ -1,5 +1,5 @@
 function generatePage1() {
-    
+
     let content = document.getElementById("content");
 
     let page1Container = document.createElement("div");
@@ -238,7 +238,7 @@ function generatePage1() {
     p1.innerHTML = 'Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a> ';
 
     let p2 = document.createElement("p");
-    p2.innerHTML = '<p>Illustration by <a href="https://icons8.com/illustrations/author/oZpGJx8ts63Q">Thierry Fousse</a> from <a href="https://icons8.com/illustrations">Ouch!</a>';
+    p2.innerHTML = '<p>Illustration by <a href="https://www.vecteezy.com/vector-art/5152875-illustration-samurai-with-ramen">Riven Ionia</a></a>';
     
     let p3 = document.createElement("p");
     p3.innerHTML = '<a href="https://www.vecteezy.com/vector-art/1234546-sushi-oriental-food-icon-set">Sushi Vectors by stockgiu</a>';
@@ -252,88 +252,13 @@ function generatePage1() {
 
     page1Container.append(navEle, sectionNameEle, asideEle, mainEle, sectionButtonsEle, sectionFooterEle, sectionAttrEle);
 
+    
+
     content.appendChild(page1Container);
 
 }
 
+
+
 export default generatePage1;
 
-
-
-
-
-
-
-// <!-- <div id="page1Container">
-//             <nav>
-//                 <div id="navLeft">
-//                     <img src="../src/images/svg/japan-logo.svg" alt="logo">
-//                     <h4>CUISINE</h4>
-//                 </div>
-//                 <div id="navMiddle">
-//                     <a href="#" id="about">About</a>
-//                     <a href="#" id="Menu">Menu</a>
-//                     <a href="#" id="contact">Contact</a>
-//                 </div>
-//                 <div id="navRight">                 
-//                     <div id="bag">
-//                         <img id="bagLogo" src="../src/images/svg/shopping-bag.svg" alt="shopping-bag">
-//                         <div id="bagItems"><p>1</p></div>
-//                     </div>
-//                     <div id="github"><a href="https://github.com/hmjatt"><img id="githubLogo" src="../src/images/github.png" alt="github"></a></div>
-//                 </div>
-
-//             </nav>
-    
-//             <section>
-//                 <h1 id="restaurantName">Japanese <br> Cuisine</h1>
-//             </section>
-
-//             <aside>
-//                 <img src="../src/images/gif/dragon.gif" alt="dragon" id="dragonGif">
-//                 <img src="../src/images/sushi.png" alt="sushi-img" id="sushiImg">
-//                 <img src="../src/images/ramen.png" alt="ramen-img" id="ramenImg">
-//             </aside>
-            
-//             <main>
-//                 <article>
-//                     <h6>At Japanese Cuisine we strive to bring people <br> the best Japanese food prepared using the freshest<br> and best ingredients.</h6>
-//                 </article>
-//             </main>
-    
-//             <section id="sectionButtons">
-//                 <button id="orderNowBtn">
-//                     <h5>Order Now</h5>
-//                     <img src="../src/images/svg/right-arrow-white.svg" alt="right-arrow">
-//                 </button>
-//                 <button id="menuBtn">
-//                     <h5>Menu</h5>
-//                     <img src="../src/images/svg/right-arrow-livid-brown.svg" alt="right-arrow">
-//                 </button>
-//             </section>
-    
-//             <section id="page1Footer">
-//                 <div id="footItem1">
-//                     <h3>18000</h3>
-//                     <h6>Orders Delivered</h6>
-//                 </div>
-//                 <div id="footItem2">
-//                     <h3>4.5<img src="../src/images/svg/star.svg" alt="rating-star"></h3>
-//                     <h6>Google Score</h6>
-//                 </div>
-//                 <div id="footItem3">
-//                     <h3>456</h3>
-//                     <h6>Orders this week</h6>
-//                 </div>
-//                 <div id="footItem4">
-//                     <h3>97 %</h3>
-//                     <h6>Natural products we use</h6>
-//                 </div>
-//             </section>
-
-//              <section>
-//                 <p>Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a></p>
-//                 <p>Illustration by <a href="https://icons8.com/illustrations/author/oZpGJx8ts63Q">Thierry Fousse</a> from <a href="https://icons8.com/illustrations">Ouch!</a></p>
-                    // <p><a href="https://www.vecteezy.com/vector-art/1234546-sushi-oriental-food-icon-set">Sushi Vectors by stockgiu</a></p>
-//             </section> 
-//         </div> --></main>
