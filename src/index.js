@@ -1,4 +1,4 @@
-import generatePage from "./generatePage";
+import generatePage1 from "./generatePage1";
 
 
-console.log(generatePage());
+console.log(generatePage1());

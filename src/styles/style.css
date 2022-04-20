@@ -64,7 +64,7 @@ nav img {
 #navMiddle a {
     position: relative;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 36px;
     margin: 19px;
     color: var(--livid-brown);
@@ -129,7 +129,7 @@ main {
 
 main h6 {
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 section {
@@ -226,6 +226,7 @@ section {
     background-color: var(--off-white);
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 #page1Footer div {

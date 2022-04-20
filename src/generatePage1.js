@@ -1,14 +1,9 @@
-function generatePage() {
+function generatePage1() {
     
     let content = document.getElementById("content");
 
     let page1Container = document.createElement("div");
     page1Container.id = "page1Container";
-
-    
-    
-    let sectionAttrEle = document.createElement("section");
-
 
 
     //-------for navEle-------//
@@ -231,30 +226,29 @@ function generatePage() {
 
     sectionFooterEle.append(footItem1, footItem2, footItem3, footItem4);
 
-
-    //             <section id="page1Footer">
-//                 <div id="footItem1">
-//                     <h3>18000</h3>
-//                     <h6>Orders Delivered</h6>
-//                 </div>
-//                 <div id="footItem2">
-//                     <h3>4.5<img src="../src/images/svg/star.svg" alt="rating-star"></h3>
-//                     <h6>Google Score</h6>
-//                 </div>
-//                 <div id="footItem3">
-//                     <h3>456</h3>
-//                     <h6>Orders this week</h6>
-//                 </div>
-//                 <div id="footItem4">
-//                     <h3>97 %</h3>
-//                     <h6>Natural products we use</h6>
-//                 </div>
-//             </section>
-
-    
-
     //-------for sectionFooterEle-------//
 
+
+
+    //-------for sectionAttrEle-------//
+
+    let sectionAttrEle = document.createElement("section");
+
+    let p1 = document.createElement("p");
+    p1.innerHTML = 'Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a> ';
+
+    let p2 = document.createElement("p");
+    p2.innerHTML = '<p>Illustration by <a href="https://icons8.com/illustrations/author/oZpGJx8ts63Q">Thierry Fousse</a> from <a href="https://icons8.com/illustrations">Ouch!</a>';
+    
+    let p3 = document.createElement("p");
+    p3.innerHTML = '<a href="https://www.vecteezy.com/vector-art/1234546-sushi-oriental-food-icon-set">Sushi Vectors by stockgiu</a>';
+
+
+    sectionAttrEle.append(p1, p2, p3);
+
+    //-------for sectionAttrEle-------//
+
+    
 
     page1Container.append(navEle, sectionNameEle, asideEle, mainEle, sectionButtonsEle, sectionFooterEle, sectionAttrEle);
 
@@ -262,7 +256,7 @@ function generatePage() {
 
 }
 
-export default generatePage;
+export default generatePage1;
 
 
 
@@ -340,5 +334,6 @@ export default generatePage;
 //              <section>
 //                 <p>Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a></p>
 //                 <p>Illustration by <a href="https://icons8.com/illustrations/author/oZpGJx8ts63Q">Thierry Fousse</a> from <a href="https://icons8.com/illustrations">Ouch!</a></p>
+                    // <p><a href="https://www.vecteezy.com/vector-art/1234546-sushi-oriental-food-icon-set">Sushi Vectors by stockgiu</a></p>
 //             </section> 
 //         </div> --></main>
