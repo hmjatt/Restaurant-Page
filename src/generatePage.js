@@ -5,16 +5,20 @@ function generatePage() {
     let page1Container = document.createElement("div");
     page1Container.id = "page1Container";
 
-    let navEle = document.createElement("nav");
-    let sectionNameEle = document.createElement("section");
-    let asideEle = document.createElement("aside");
+    
+    
+   
     let articleEle = document.createElement("article");
     let sectionButtonsEle = document.createElement("section");
     let sectionFooterEle = document.createElement("section");
     let sectionAttrEle = document.createElement("section");
 
 
+
     //-------for navEle-------//
+
+    let navEle = document.createElement("nav");
+
     let navLeft = document.createElement("div");
     navLeft.id = "navLeft";
     
@@ -77,10 +81,15 @@ function generatePage() {
 
     
     navEle.append(navLeft, navMiddle, navRight);
+
     //-------for navEle-------//
 
 
+
     //-------for sectionNameEle-------//
+
+    let sectionNameEle = document.createElement("section");
+
     let restaurantName = document.createElement("h1");
     let restaurantNamediv1 = document.createElement("div");
     let restaurantNamediv2 = document.createElement("div");
@@ -92,7 +101,37 @@ function generatePage() {
 
 
     sectionNameEle.appendChild(restaurantName);
+
     //-------for sectionNameEle-------//
+
+
+
+    //-------for asideEle-------//
+
+    let asideEle = document.createElement("aside");
+
+    let dragonGif = document.createElement("img");
+    dragonGif.id = "dragonGif";
+    dragonGif.src = "../src/images/gif/dragon.gif";
+    dragonGif.alt = "dragon-gif";
+    let sushiImg = document.createElement("img");
+    sushiImg.id = "sushiImg";
+    sushiImg.src = "../src/images/sushi.png";
+    sushiImg.alt = "sushi-img";
+    let ramenImg = document.createElement("img");
+    ramenImg.id = "ramenImg";
+    ramenImg.src = "../src/images/ramen.png";
+    ramenImg.alt = "ramen-img";
+
+    asideEle.append(dragonGif, sushiImg, ramenImg);
+    //             <aside>
+//                 <img src="../src/images/gif/dragon.gif" alt="dragon" id="dragonGif">
+//                 <img src="../src/images/sushi.png" alt="sushi-img" id="sushiImg">
+//                 <img src="../src/images/ramen.png" alt="ramen-img" id="ramenImg">
+//             </aside>
+
+
+    //-------for asideEle-------//
 
 
     page1Container.append(navEle, sectionNameEle, asideEle, articleEle, sectionButtonsEle, sectionFooterEle, sectionAttrEle);
