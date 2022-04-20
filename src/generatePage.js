@@ -9,7 +9,7 @@ function generatePage() {
     
    
     
-    let sectionButtonsEle = document.createElement("section");
+
     let sectionFooterEle = document.createElement("section");
     let sectionAttrEle = document.createElement("section");
 
@@ -38,10 +38,12 @@ function generatePage() {
     aboutLink.href = "#";
     aboutLink.id = "about";
     aboutLink.innerText = "About";
+
     let menuLink = document.createElement("a");
     menuLink.href = "#";
     menuLink.id = "menu";
     menuLink.innerText = "Menu";
+
     let contactLink = document.createElement("a");
     contactLink.href = "#";
     contactLink.id = "contact";
@@ -113,10 +115,12 @@ function generatePage() {
     dragonGif.id = "dragonGif";
     dragonGif.src = "../src/images/gif/dragon.gif";
     dragonGif.alt = "dragon-gif";
+
     let sushiImg = document.createElement("img");
     sushiImg.id = "sushiImg";
     sushiImg.src = "../src/images/sushi.png";
     sushiImg.alt = "sushi-img";
+
     let ramenImg = document.createElement("img");
     ramenImg.id = "ramenImg";
     ramenImg.src = "../src/images/ramen.png";
@@ -147,6 +151,38 @@ function generatePage() {
     mainEle.appendChild(mainEleArticle);
 
     //-------for mainEle-------//
+
+
+
+    //-------for sectionButtonsEle-------//
+
+    let sectionButtonsEle = document.createElement("section");
+    sectionButtonsEle.id = "sectionButtons";
+
+    let orderNowBtn = document.createElement("button");
+    orderNowBtn.id = "orderNowBtn";
+    let orderNowH5 = document.createElement("h5");
+    orderNowH5.innerText = "Order Now";
+    let rightArrowWhiteSvg = document.createElement("img");
+    rightArrowWhiteSvg.src = "../src/images/svg/right-arrow-white.svg";
+    rightArrowWhiteSvg.alt = "right-arrow-white";
+
+    orderNowBtn.append(orderNowH5, rightArrowWhiteSvg);
+
+    let menuBtn = document.createElement("button");
+    menuBtn.id = "menuBtn";
+    let menuH5 = document.createElement("h5");
+    menuH5.innerText = "Menu";
+    let rightArrowSvg = document.createElement("img");
+    rightArrowSvg.src = "../src/images/svg/right-arrow-livid-brown.svg";
+    rightArrowSvg.alt = "right-arrow";
+
+    menuBtn.append(menuH5, rightArrowSvg);
+
+
+    sectionButtonsEle.append(orderNowBtn, menuBtn);
+
+    //-------for sectionButtonsEle-------//
 
 
     page1Container.append(navEle, sectionNameEle, asideEle, mainEle, sectionButtonsEle, sectionFooterEle, sectionAttrEle);
