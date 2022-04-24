@@ -199,6 +199,7 @@ section {
     top: 15vh;
     left: 35vw;
     transition: 1s;
+    
 }
 
 #sushiImg {
@@ -217,12 +218,6 @@ section {
     transition: 1s;
 }
 
-
-#ramenGif {
-    position: absolute;
-    top: 50vh;
-    left: 70vw;
-}
 
 #page1Footer {
     background-color: var(--off-white);
@@ -285,8 +280,95 @@ section {
 
 /* page3 */
 
-/* #page3Container img {
-
+/* #page3Container {
+    background-color: var(--khaki);
 } */
+
+#page3Container main {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#page3Container h2 {
+    font-size: 60px;
+}
+
+#page3Container h6 {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+
+.item {
+    padding: 50px;
+    margin: 50px;
+    background-color: var(--white);
+    max-width: 600px;
+}
+
+#page3Container section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "item1 ."
+        "item2 item3"
+        "item4 item5"
+        ". item6";
+}
+
+#item1 {
+    grid-area: item1;
+}
+
+#item2 {
+    grid-area: item2;
+}
+
+#item3 {
+    grid-area: item3;
+}
+
+#item4 {
+    grid-area: item4;
+}
+
+#item5 {
+    grid-area: item5;
+}
+
+#item6 {
+    grid-area: item6;
+}
+
+.itemImg img {
+    width: 50%;
+    height: auto;
+}
+
+.itemPrice {
+    display: flex;
+    justify-content: space-between;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.itemText h3 {
+    font-size: 50px;
+}
+
+.itemText p {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.shoppingBagItem {
+    height: 80px;
+    border-radius: 50px;
+}
 
 /* page3 */
