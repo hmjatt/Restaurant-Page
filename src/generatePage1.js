@@ -231,6 +231,7 @@ function generatePage1() {
 
 
     //-------for sectionAttrEle-------//
+    //make it secure
 
     let sectionAttrEle = document.createElement("section");
 
@@ -241,10 +242,12 @@ function generatePage1() {
     p2.innerHTML = '<p>Illustration by <a href="https://www.vecteezy.com/vector-art/5152875-illustration-samurai-with-ramen">Riven Ionia</a></a>';
     
     let p3 = document.createElement("p");
-    p3.innerHTML = '<a href="https://www.vecteezy.com/vector-art/1234546-sushi-oriental-food-icon-set">Sushi Vectors by stockgiu</a>';
+    p3.innerHTML = '<a href="https://www.vecteezy.com/vector-art/1234546-sushi-oriental-food-icon-set">Sushi Vectors by Stockgiu</a>';
 
+    let p4 = document.createElement("p");
+    p4.innerHTML = '<a href="https://icons8.com/icons/authors/3kSkbuAyjUdG/justicon/external-justicon-flat-justicon/external-japan-justicon-flat-justicon">Sushi Icons by Justicon</a>';
 
-    sectionAttrEle.append(p1, p2, p3);
+    sectionAttrEle.append(p1, p2, p3, p4);
 
     //-------for sectionAttrEle-------//
 
