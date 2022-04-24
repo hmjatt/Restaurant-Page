@@ -253,10 +253,31 @@ section {
     margin: 0px;
 }
 
+/* page2 */
 
 #page2Container {
     background-color: var(--royal-blue);
     color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding: 200px 0px 200px 0px;
+}
+
+#page2Container main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page2Container h2 {
+    font-size: 60px;
+}
+
+#page2Container h6 {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 300;
 }
 
 
+/* page2 */

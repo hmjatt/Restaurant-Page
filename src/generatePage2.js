@@ -18,9 +18,36 @@ function generatePage2() {
 
 
     let mainEle = document.createElement("main");
-    mainEle.innerHTML = '<article><h6>At Japanese Cuisine we strive to bring people <br> the best Japanese food prepared using the freshest<br> and best ingredients.Amazing Japanese <br> food and a Fantastic Sushi Bar. Great <br> selection of sake, dumplings and more. Perfect for dates, families, <br> and business meetings. Come in and enjoy!!! <br><b>Youkoso</b>(Welcome).</h6></article>';
 
+
+    let articleEle = document.createElement("article");
+    let lineBreakEle = document.createElement("br");
+    let h2Ele = document.createElement("h2");
+    h2Ele.innerText = "Our Story";
+
+    let h6Ele1 = document.createElement("h6");
+    h6Ele1.innerText = "At Japanese Cuisine we strive to bring people";
+    let h6Ele2 = document.createElement("h6");
+    h6Ele2.innerText = "the best Japanese food prepared using the freshest ";
+    let h6Ele3 = document.createElement("h6");
+    h6Ele3.innerText = "and best ingredients. Amazing Japanese ";
+    let h6Ele4 = document.createElement("h6");
+    h6Ele4.innerText = "food and a Fantastic Sushi Bar. Great ";
+    let h6Ele5 = document.createElement("h6");
+    h6Ele5.innerText = "selection of sake, dumplings and more. Perfect for dates, families, ";
+    let h6Ele6 = document.createElement("h6");
+    h6Ele6.innerText = "and business meetings. Come in and enjoy!!! ";
+    let h6Ele7 = document.createElement("h6");
+    h6Ele7.innerText = "Youkoso";
+    h6Ele7.style.fontWeight = "bold";
+    let h6Ele8 = document.createElement("h6");
+    h6Ele8.innerText = "(Welcome)";
     
+    articleEle.append(h6Ele1, lineBreakEle, h6Ele2, lineBreakEle, h6Ele3, lineBreakEle, h6Ele4, lineBreakEle, h6Ele5, lineBreakEle, h6Ele6, lineBreakEle, h6Ele7, h6Ele8);
+    
+
+    mainEle.append(h2Ele, articleEle);
+
 
     page2Container.append(asideEle, mainEle);
 
@@ -32,22 +59,3 @@ function generatePage2() {
 
 export default generatePage2;
 
-
-
-// <div id="page2Container">
-
-// <aside>
-//     <img src="../src/images/samurai-img.png" alt="samurai-img" id="samuraiImg">
-// </aside>
-
-// <main>
-//     <article>
-//         <h6>At Japanese Cuisine we strive to bring people <br> the best Japanese food prepared using the freshest<br> and best ingredients.
-//             Amazing Japanese food and a Fantastic Sushi Bar. Great <br> selection of sake, dumplings and more. Perfect for dates, families, 
-//             and business meetings. Come in and enjoy!!!
-//             <b>Youkoso</b>(Welcome).
-//         </h6>
-//     </article>
-// </main>
-
-// </div>
