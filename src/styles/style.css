@@ -6,10 +6,10 @@
     --orange-dark: #e44901;
     --khaki: #fff1da;
     --off-white: #fff9f1b6;
-    --khaki-light: #fff7e8;
-    --khaki-light-2: #fff7e7;
+    /* --khaki-light: #fff7e8;
+    --khaki-light-2: #fff7e7; */
     --white: #ffffff;
-    --light-grey: #f4f3f4;
+    /* --light-grey: #f4f3f4; */
     --japan-red-light: #ffead9;
   }
 
@@ -132,7 +132,7 @@ nav img {
     font-weight: 400;
 }
 
-section {
+#page1Container section {
     display: flex;
 }
 
@@ -451,6 +451,41 @@ section {
 #asideRight img{
     height: 800px;
     margin-left: 500px;
+}
+
+footer {
+    background-color: var(--livid-brown);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px 50px 0px;
+}
+
+#footerTop {
+    display: flex;
+    justify-content: space-around;
+} 
+
+#footerMiddle {
+    display: flex;
+    justify-content: space-around;
+    min-width: 400px;
+}
+
+#footerMiddle a {
+    color: var(--white);
+    font-size: 26px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+#footerRight {
+    display: flex;
+    min-width: 400px;;
+    justify-content: space-around;
+}
+
+#footerRight img {
+    height: 50px;
 }
 
 
