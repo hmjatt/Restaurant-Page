@@ -230,30 +230,30 @@ function generatePage1() {
 
 
 
-    //-------for sectionAttrEle-------//
-    //make it secure
+    // //-------for sectionAttrEle-------//
+    // //make it secure
 
-    let sectionAttrEle = document.createElement("section");
+    // let sectionAttrEle = document.createElement("section");
 
-    let p1 = document.createElement("p");
-    p1.innerHTML = 'Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a> ';
+    // let p1 = document.createElement("p");
+    // p1.innerHTML = 'Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a> ';
 
-    let p2 = document.createElement("p");
-    p2.innerHTML = '<p>Illustration by <a href="https://www.vecteezy.com/vector-art/5152875-illustration-samurai-with-ramen">Riven Ionia</a></a>';
+    // let p2 = document.createElement("p");
+    // p2.innerHTML = '<p>Illustration by <a href="https://www.vecteezy.com/vector-art/5152875-illustration-samurai-with-ramen">Riven Ionia</a></a>';
     
-    let p3 = document.createElement("p");
-    p3.innerHTML = '<a href="https://www.vecteezy.com/vector-art/1234546-sushi-oriental-food-icon-set">Sushi Vectors by Stockgiu</a>';
+    // let p3 = document.createElement("p");
+    // p3.innerHTML = '<a href="https://www.vecteezy.com/vector-art/1234546-sushi-oriental-food-icon-set">Sushi Vectors by Stockgiu</a>';
 
-    let p4 = document.createElement("p");
-    p4.innerHTML = '<a href="https://icons8.com/icons/authors/3kSkbuAyjUdG/justicon/external-justicon-flat-justicon/external-japan-justicon-flat-justicon">Sushi Icons by Justicon</a>';
+    // let p4 = document.createElement("p");
+    // p4.innerHTML = '<a href="https://icons8.com/icons/authors/3kSkbuAyjUdG/justicon/external-justicon-flat-justicon/external-japan-justicon-flat-justicon">Sushi Icons by Justicon</a>';
 
-    sectionAttrEle.append(p1, p2, p3, p4);
+    // sectionAttrEle.append(p1, p2, p3, p4);
 
-    //-------for sectionAttrEle-------//
+    // //-------for sectionAttrEle-------//
 
     
 
-    page1Container.append(navEle, sectionNameEle, asideEle, mainEle, sectionButtonsEle, sectionFooterEle, sectionAttrEle);
+    page1Container.append(navEle, sectionNameEle, asideEle, mainEle, sectionButtonsEle, sectionFooterEle);
 
     
 
