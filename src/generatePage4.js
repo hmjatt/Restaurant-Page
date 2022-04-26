@@ -40,13 +40,10 @@ function generatePage4() {
             <section id="footerTop">
                 <div id="footerLeft">
                     <img src="../src/images/svg/japan-logo.svg" alt="logo">
-                    <h4>CUISINE</h4>
                 </div>
 
                 <div id="footerMiddle">
-                    <a href="#" id="about">About</a>
-                    <a href="#" id="menu">Menu</a>
-                    <a href="#" id="contact">Contact</a>
+                    <h4>CUISINE</h4>
                 </div>
 
                 <div id="footerRight">

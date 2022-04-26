@@ -2,6 +2,7 @@
     --royal-blue: #b8baff8f;
     --livid-brown: #371d32;
     --livid-brown-light: #371d32c5;
+    --livid-brown-light-2: #371d32e5;
     --livid-brown-shadow: #371d3209;
     --orange: #ff5709;
     --orange-dark: #e44901;
@@ -31,14 +32,21 @@ h1 {
     font-family: 'Bungee Shade', cursive;
     line-height: 70px;
     font-size: 80px;
-    padding-left: 200px;
 }
 
 h2 {
     font-size: 60px;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 nav {
+    background-color: var(--livid-brown-light-2);
+    color: var(--white);
     display: flex;
     padding: 50px 80px 50px 80px;
 }
@@ -72,7 +80,7 @@ nav img {
     font-weight: 700;
     font-size: 36px;
     margin: 19px;
-    color: var(--livid-brown);
+    color: var(--white);
 }
 
 #navMiddle a::before {
@@ -81,7 +89,7 @@ nav img {
     width: 100%;
     height: 4px;
     border-radius: 4px;
-    background-color: var(--livid-brown);
+    background-color: var(--white);
     bottom: 0;
     left: 0;
     transform-origin: right;
@@ -122,7 +130,8 @@ nav img {
 }
 
 #page1Container main {
-    padding-left: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 #page1Container main h6 {
@@ -132,6 +141,11 @@ nav img {
 
 #page1Container section {
     display: flex;
+    justify-content: center;
+}
+
+#sectionNameEle {
+    padding-top: 250px;
 }
 
 #sectionButtons {
@@ -146,7 +160,7 @@ nav img {
     font-size: 26px;
     width: 300px;
     height: 80px;
-    margin: 20px;
+    margin: 20px 100px 20px 20px;
     border-radius: 55px;
     transition: 0.5s;
     border: none;
@@ -190,28 +204,9 @@ nav img {
 }
 
 #dragonGif {
-    position: absolute;
-    top: 15vh;
-    left: 35vw;
+    margin-left: 50%;
     transition: 1s;
 }
-
-#sushiImg {
-    position: absolute;
-    top: 45vh;
-    left: 70vw;
-    width: 275px;
-    transition: 1s;
-}
-
-#ramenImg {
-    position: absolute;
-    top: 66vh;
-    left: 55vw;
-    width: 300px;
-    transition: 1s;
-}
-
 
 #page1Footer {
     background-color: var(--off-white);
@@ -467,12 +462,15 @@ footer {
     min-width: 400px;
 }
 
-#footerMiddle a {
-    font-size: 26px;
-    font-weight: 300;
-    text-decoration: none;
-    color: var(--white);
+#footerMiddle h4{
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0px;
     align-self: center;
+}
+
+#footerLeft img {
+    height: 70px;
 }
 
 #footerLeft h4{
@@ -480,7 +478,7 @@ footer {
     font-size: 26px;
 }
 
-#footerLeft img,  #footerRight img {
+#footerRight img {
     height: 50px;
 }
 
