@@ -17,16 +17,70 @@ let navbar = document.getElementById("navEle");
 let sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function scrollFunction() {
+function scrollFunction(e) {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
   }
+
 }
 
 
+// When the user clicks on the link, scroll to that page
 
-// let aboutLink = document.getElementById("about");
 
-// aboutLink.addEventListener("click", );
+
+
+let home = document.getElementById("home");
+let about = document.getElementById("about");
+let menu = document.getElementById("menu");
+let contact = document.getElementById("contact");
+let page1Container = document.getElementById("page1Container");
+let page2Container = document.getElementById("page2Container");
+let page3Container = document.getElementById("page3Container");
+let page4Container = document.getElementById("page4Container");
+
+function tabFunction(e) {
+
+    home.addEventListener("click", function(e) {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
+    e.preventDefault();
+    });
+
+    about.addEventListener("click", function(e) {
+    window.scrollTo({
+        top: page2Container.offsetTop,
+        left: 0,
+        behavior: "smooth"
+    });
+    e.preventDefault();
+    });
+
+    menu.addEventListener("click", function(e) {
+    window.scrollTo({
+        top: page3Container.offsetTop,
+        left: 0,
+        behavior: "smooth"
+    });
+    e.preventDefault();
+    });
+
+    contact.addEventListener("click", function(e) {
+    window.scrollTo({
+        top: page4Container.offsetTop,
+        left: 0,
+        behavior: "smooth"
+    });
+    e.preventDefault();
+    });
+
+    
+}
+
+
+tabFunction();
