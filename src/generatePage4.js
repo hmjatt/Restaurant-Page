@@ -60,7 +60,6 @@ function generatePage4() {
                 <div id="attribution">
                     <p>Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a></p>
                     <p>Illustration by <a href="https://www.vecteezy.com/vector-art/5152875-illustration-samurai-with-ramen">Riven Ionia</a></p>
-                    <p>Sushi Vectors by <a href="https://www.vecteezy.com/vector-art/1234546-sushi-oriental-food-icon-set">Stockgiu</a></p>
                     <p>Sushi Icons by <a href="https://icons8.com/icons/authors/3kSkbuAyjUdG/justicon/external-justicon-flat-justicon/external-japan-justicon-flat-justicon">Justicon</a></p>
                     <p>Ottawa Vectors by<a href="https://www.vecteezy.com/free-vector/toronto"> Vecteezy</a></p>
                 </div>
