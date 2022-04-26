@@ -102,12 +102,12 @@ function generatePage1() {
 
     let asideEle = document.createElement("aside");
 
-    let dragonGif = document.createElement("img");
-    dragonGif.id = "dragonGif";
-    dragonGif.src = "../src/images/gif/dragon.gif";
-    dragonGif.alt = "dragon-gif";
+    let lanternGif = document.createElement("img");
+    lanternGif.id = "lanternGif";
+    lanternGif.src = "../src/images/gif/lantern.gif";
+    lanternGif.alt = "lantern-gif";
 
-    asideEle.append(dragonGif);
+    asideEle.append(lanternGif);
 
     sectionNameEle.append(restaurantName, asideEle);
 

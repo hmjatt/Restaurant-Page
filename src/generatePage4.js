@@ -11,7 +11,7 @@ function generatePage4() {
     `   <main>
             <h2>Locations</h2>
             <article>
-                <h6>Our Japanese Cuisine is based in Ottawa City.</h6>
+                <h6>Our Japanese Cuisine is based in <b>Ottawa City</b>.</h6>
             </article>
         </main>
 

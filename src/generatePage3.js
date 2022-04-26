@@ -14,7 +14,7 @@ function generatePage3() {
                 <h6>for serving 6 course meals, in which all the dishes have a natural flow</h6>
                 <h6>and progression to them, and uses highly seasonal ingredients, some</h6>
                 <h6>of which come from Nakayama's </h6>
-                <h6>plenty of vegetables and herbs. <b></b>(Bon appétit).</h6>
+                <h6>plenty of vegetables and herbs. <b>Itadakimasu</b>(Bon appétit).</h6>
                 
             </article>
 

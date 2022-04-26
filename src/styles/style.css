@@ -48,7 +48,7 @@ nav {
     background-color: var(--livid-brown-light-2);
     color: var(--white);
     display: flex;
-    padding: 50px 80px 50px 80px;
+    padding: 70px 0px 70px 0px;
 }
 
 nav img {
@@ -58,10 +58,11 @@ nav img {
 
 #navLeft {
     display: flex;
+    padding-left: 100px;
 }
 
 #navLeft h4 {
-    padding-left: 30px;
+    padding-left: 50px;
     font-size: 40px;
     margin: 0px;
     margin-top: -15px;
@@ -104,6 +105,7 @@ nav img {
 
 #navRight {
     display: flex;
+    padding-right: 100px;
 }
 
 #navRight #github, #navRight #bag {
@@ -145,7 +147,7 @@ nav img {
 }
 
 #sectionNameEle {
-    padding-top: 250px;
+    padding-top: 300px;
 }
 
 #sectionButtons {
@@ -203,7 +205,7 @@ nav img {
     width: 20px;
 }
 
-#dragonGif {
+#lanternGif {
     margin-left: 50%;
     transition: 1s;
 }
