@@ -251,6 +251,9 @@ nav img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 40%;
+    line-height: 50px;
+    text-align: center;
 }
 
 #page2Container h6 {
