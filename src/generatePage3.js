@@ -10,12 +10,8 @@ function generatePage3() {
         <main>
             <h2>Chef's Specials</h2>
             <article>
-                <h6>Our Chef Akihiro Hayashi has been cooking for more than 18 years. He's known</h6>
-                <h6>for serving 6 course meals, in which all the dishes have a natural flow</h6>
-                <h6>and progression to them, and uses highly seasonal ingredients, some</h6>
-                <h6>of which come from Nakayama's </h6>
-                <h6>plenty of vegetables and herbs. <b>Itadakimasu</b>(Bon appétit).</h6>
-                
+                <h6>Our Chef Akihiro Hayashi has been cooking for more than 18 years. He's known for serving 6 course meals, in which all the dishes have a natural flow
+                and progression to them, and uses highly seasonal ingredients, someof which come from Nakayama'splenty of vegetables and herbs. <b>Itadakimasu</b>(Bon appétit).</h6>
             </article>
 
         </main>

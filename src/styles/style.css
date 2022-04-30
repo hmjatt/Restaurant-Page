@@ -293,6 +293,7 @@ nav img {
     margin: 10px;
     font-size: 30px;
     font-weight: 300;
+    max-width: 900px;
     text-align: center;
 }
 
@@ -522,9 +523,22 @@ footer {
         font-size: 42px;
     }
 
+    nav {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .sticky {
+        width: 100vw;
+    }
+
+    #navLeft, #navRight, #navMiddle {
+        padding-left: 0px;
+    }
+
     #navMiddle {
         display: flex;
-        justify-content: center
+        justify-content: center;
+        padding: 20px 0px 20px 0px;
     }
 
     #navMiddle a{
@@ -549,29 +563,43 @@ footer {
     }
 
     #sectionButtons {
-        padding: 0px;
+        padding: 0px 0px 50px 0px;
+        
     }
 
     #sectionButtons button {
-        margin: 0px;
+        margin: 20px 0px 20px 0px;
+    }
+
+    #page1Footer {
+        width: 100vw;
     }
 
     #page2Container {
         flex-direction: column;
+        padding: 50px 0px 50px 0px;
     }
 
-
+    #page1Footer div{
+        margin: 0px;
+        padding: 50px;
+    }
     
     #page2Container main {
         max-width: 100%;
+        line-height: 30px;
+    }
+
+    #page2Container aside {
+        padding: 0px 50px 0px 50px;
     }
 
     #samuraiImg {
-        width: 50%;
+        width: 85%;
     }
 
-    #page3Container {
-        padding: 0px;
+    #page3Container, #page1Container {
+        padding: 50px 0px 50px 0px;
     }
 
     .item {
@@ -588,21 +616,37 @@ footer {
     }
 
     #asideLeft {
-        padding: 27px 13px 24px 51px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 27px 13px 24px 15px;
+        margin: 0px 20px 0px 20px;
     }
 
     #asideRight img {
-        width: 300px;
+        width: 80vw;
+        height: 80vw;
     }
 
-    .sticky {
-        width: 100vw;
+    #footerTop div {
+        padding: 20px 0px 20px 0px;
     }
 
-    #navLeft, #navRight, #navMiddle {
-        padding-left: 0px;
+    #attribution  p {
+        padding: 0px;
     }
-  }
+    
+}
 
 
+@media(max-width:600px) {
+
+    #page2Container aside {
+        padding: 0px 10px 0px 10px;
+    }
+
+    #samuraiImg {
+        width: 97%; 
+    }
+}
 
