@@ -1,0 +1,654 @@
+:root {
+    --royal-blue: #b8baff8f;
+    --livid-brown: #371d32;
+    --livid-brown-light: #371d32c5;
+    --livid-brown-light-2: #371d32e5;
+    --livid-brown-shadow: #371d3209;
+    --orange: #ff5709;
+    --orange-dark: #e44901;
+    --khaki: #fff1da;
+    --off-white: #fff9f1b6;
+    --white: #ffffff;
+    --japan-red-light: #ffead9a8;
+  }
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--livid-brown);
+    background-color: var(--khaki);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%2336142f80' fill-opacity='0.3' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+    scroll-behavior: smooth;
+    width: 100vw;
+}
+
+body {
+    margin: 0px;
+}
+
+
+#page1Container {
+    position: relative;
+}
+
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    line-height: 70px;
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    background-color: var(--livid-brown-light-2);
+    color: var(--white);
+    display: flex;
+    padding: 70px 0px 70px 0px;
+    z-index: 1;
+}
+
+nav img {
+    height: 70px;
+    border-radius: 10px;
+}
+
+#navLeft {
+    display: flex;
+    padding-left: 100px;
+}
+
+#navLeft h4 {
+    padding-left: 50px;
+    font-size: 40px;
+    margin: 0px;
+    margin-top: -15px;
+    font-family: 'Bungee Shade', cursive;
+}
+
+#navMiddle {
+    display: flex;
+    flex-grow: 2;
+    padding-left: 120px;
+}
+
+#navMiddle a {
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 19px;
+    color: var(--white);
+}
+
+#navMiddle a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--white);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+#navMiddle a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+} 
+
+#navRight {
+    display: flex;
+    padding-right: 100px;
+}
+
+#navRight #github, #navRight #bag {
+    padding-left: 30px;
+}
+
+#bag :hover, #github :hover {
+    opacity: 0.8;
+}
+
+#bagItems {
+    margin: -80px 5px 5px 5px;
+    position: relative;
+}
+
+#bagItems p {
+    color: var(--white);
+    background: var(--orange);
+    border-radius: 20px;
+    width: 6px;
+    height: 20px;
+    padding: 6px 10px 0px 12px;
+    margin: -10px 10px -5px 47px;
+}
+
+#page1Container main {
+    display: flex;
+    justify-content: center;
+}
+
+#page1Container main h6 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#page1Container section {
+    display: flex;
+    justify-content: center;
+}
+
+#sectionNameEle {
+    margin-top: 350px;
+}
+
+#sectionButtons {
+    padding: 0px 0px 100px 180px ;
+}
+
+#sectionButtons button {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Josefin Sans', sans-serif;
+    align-self: center;
+    font-size: 26px;
+    width: 300px;
+    height: 80px;
+    margin: 20px 100px 20px 20px;
+    border-radius: 55px;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+#sectionButtons button h5 {
+    margin: 30px 0px;
+}
+
+#orderNowBtn {
+    background-color: var(--orange);
+    box-shadow: 0 22px 48px -4px rgb(219, 94, 45);
+    color: var(--white);
+}
+
+#orderNowBtn img {
+    background: var(--orange-dark);
+    padding: 30px;
+    border-radius: 100px;
+    margin-right: -50px;
+}
+
+#sectionButtons button:hover {
+    opacity: 0.7;
+}
+
+#menuBtn {
+    background-color: var(--white);
+    color: var(--livid-brown);
+    box-shadow: 0 22px 48px -4px rgb(201, 195, 193);
+}
+
+#menuBtn img {
+    margin: 28px -30px 0px 0px;
+}
+
+#sectionButtons button img {
+    height: 20px;
+    width: 20px;
+}
+
+#lanternGif {
+    margin-left: 50%;
+    transition: 1s;
+}
+
+#page1Footer {
+    background-color: var(--off-white);
+    display: flex;
+    justify-content: center;
+}
+
+#page1Footer div {
+    margin: 100px;
+    text-align: center;
+}
+
+#page1Footer img {
+    height: 25px;
+    padding: 0px 0px 10px 5px;
+} 
+
+#page1Footer h3 {
+    font-size: 58px;
+    margin: 20px 0px;
+    
+}
+
+#page1Footer h6 {
+    font-size: 26px;
+    font-weight: 300;
+    margin: 0px;
+}
+
+/* page2 */
+
+#page2Container {
+    background-color: var(--royal-blue);
+    display: flex;
+    justify-content: center;
+    padding: 200px 0px 200px 0px;
+}
+
+#page2Container main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40%;
+    line-height: 50px;
+    text-align: center;
+}
+
+#samuraiImg {
+    z-index: -1;
+}
+
+#page2Container h6 {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* page2 */
+
+
+/* page3 */
+
+#page3Container {
+    background-color: var(--japan-red-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px;
+}
+
+#page3Container main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+
+#page3Container h6 {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 300;
+    max-width: 900px;
+    text-align: center;
+}
+
+.item {
+    padding: 50px;
+    margin: 50px;
+    background-color: var(--white);
+    max-width: 600px;
+    box-shadow:
+    0 2.8px 2.2px var(--livid-brown-shadow),
+    0 6.7px 5.3px var(--livid-brown-shadow),
+    0 12.5px 10px var(--livid-brown-shadow),
+    0 22.3px 17.9px var(--livid-brown-shadow),
+    0 41.8px 33.4px var(--livid-brown-shadow),
+    0 100px 80px var(--livid-brown-shadow)
+    ;
+}
+
+#page3Container section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "item1 item2"
+        " item3 item4"
+        " item5 item6";
+}
+
+#item1 {
+    grid-area: item1;
+}
+
+#item2 {
+    grid-area: item2;
+}
+
+#item3 {
+    grid-area: item3;
+}
+
+#item4 {
+    grid-area: item4;
+}
+
+#item5 {
+    grid-area: item5;
+}
+
+#item6 {
+    grid-area: item6;
+}
+
+.itemImg, .itemText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.itemImg img {
+    width: 50%;
+    height: auto;
+}
+
+.itemPrice {
+    display: flex;
+    justify-content: space-between;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.itemText h3 {
+    font-size: 50px;
+}
+
+.itemText p {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.shoppingBagItem {
+    height: 80px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.shoppingBagItem:hover {
+    opacity: 0.5;
+}
+
+/* page3 */
+
+
+/* page4 */
+
+#page4Container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--royal-blue);
+    padding-top: 200px;
+}
+
+#page4Container main, #footerBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page4Container main h6 {
+    margin: 30px 0px 50px 0px;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#footerContact {
+    display: flex;
+    justify-content: space-around;
+}
+
+#asideLeft {
+    align-self: center;
+    background-color: var(--white);
+    padding: 50px 70px 80px 50px;
+    border-radius: 50px;
+    min-width: 300px;
+    box-shadow:
+    0 2.8px 2.2px var(--livid-brown-shadow),
+    0 6.7px 5.3px var(--livid-brown-shadow),
+    0 12.5px 10px var(--livid-brown-shadow),
+    0 22.3px 17.9px var(--livid-brown-shadow),
+    0 41.8px 33.4px var(--livid-brown-shadow),
+    0 100px 80px var(--livid-brown-shadow)
+    ;
+}
+
+#horizontalLine {
+    width: 20%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    margin: 30px 0px 40px 0px;
+}
+
+#asideLeft h5 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 30px 0px 30px 0px;
+}
+
+#asideLeft h6 {
+    font-size: 26px;
+    font-weight: 300;
+    margin: 10px 0px 10px 0px;; 
+}
+
+#asideRight img{
+    height: 800px;
+}
+
+footer {
+    background-color: var(--livid-brown-light);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23371d3280' fill-opacity='1' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px 10px 0px;
+    color: var(--white);
+}
+
+#footerTop, #footerLeft, #attribution {
+    display: flex;
+    justify-content: space-around;
+} 
+
+#footerMiddle, #footerRight {
+    display: flex;
+    justify-content: space-around;
+    min-width: 400px;
+}
+
+#footerMiddle h4{
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0px;
+    align-self: center;
+}
+
+#footerLeft img {
+    height: 70px;
+}
+
+#footerLeft h4{
+    margin: 15px 0px 0px 100px;
+    font-size: 26px;
+}
+
+#footerRight img {
+    height: 50px;
+}
+
+#attribution p{
+    padding: 40px 50px 50px 50px;
+}
+
+#attribution a {
+    text-decoration: none;
+    color: var(--white);
+}
+    
+    
+/* page4 */
+
+/* for mobile */
+
+@media(max-width:1350px) {
+
+    html {
+        text-align: center;
+        font-size: 20px;
+        width: 100vw;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    nav {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .sticky {
+        width: 100vw;
+    }
+
+    #navLeft, #navRight, #navMiddle {
+        padding-left: 0px;
+    }
+
+    #navMiddle {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px 20px 0px;
+    }
+
+    #navMiddle a{
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    #sectionNameEle, #page1Container, #sectionButtons, #page1Footer, nav, #page3Container section, #footerTop, #attribution {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #lanternGif {
+        margin-left: 0px;
+        width: 250px;
+    }
+
+    article {
+        padding: 50px;
+    }
+
+    #sectionButtons {
+        padding: 0px 0px 50px 0px;
+        
+    }
+
+    #sectionButtons button {
+        margin: 20px 0px 20px 0px;
+    }
+
+    #page1Footer {
+        width: 100vw;
+    }
+
+    #page2Container {
+        flex-direction: column;
+        padding: 50px 0px 50px 0px;
+    }
+
+    #page1Footer div{
+        margin: 0px;
+        padding: 50px;
+    }
+    
+    #page2Container main {
+        max-width: 100%;
+        line-height: 30px;
+    }
+
+    #page2Container aside {
+        padding: 0px 50px 0px 50px;
+    }
+
+    #samuraiImg {
+        width: 85%;
+    }
+
+    #page3Container{
+        padding: 50px 0px 50px 0px;
+    }
+
+    .item {
+        margin: 0px;
+    }
+
+    #footerContact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footerRight, #footerMiddle {
+        min-width: 200px;
+    }
+
+    #asideLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 27px 13px 24px 15px;
+        margin: 0px 20px 0px 20px;
+    }
+
+    #asideRight img {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #footerTop div {
+        padding: 20px 0px 20px 0px;
+    }
+
+    #attribution  p {
+        padding: 0px;
+    }
+    
+}
+
+
+@media(max-width:600px) {
+
+    #page2Container aside {
+        padding: 0px 10px 0px 10px;
+    }
+
+    #samuraiImg {
+        width: 97%; 
+    }
+}
+
