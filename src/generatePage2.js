@@ -6,15 +6,18 @@ function generatePage2() {
     page2Container.id = "page2Container";
 
 
+
     let asideEle = document.createElement("aside");
 
-    let samuraiImg = document.createElement("img");
-    samuraiImg.id = "samuraiImg";
-    samuraiImg.src = "../src/images/samurai-img.png";
-    samuraiImg.alt = "samurai-img";
+    asideEle.innerHTML = `<img id="samuraiImg" data-aos="fade-left" src="../src/images/samurai-img.png" alt="samurai-img">`;
+
+    // let samuraiImg = document.createElement("img");
+    // samuraiImg.id = "samuraiImg";
+    // samuraiImg.src = "../src/images/samurai-img.png";
+    // samuraiImg.alt = "samurai-img";
 
 
-    asideEle.appendChild(samuraiImg);
+    // asideEle.appendChild(samuraiImg);
 
 
     let mainEle = document.createElement("main");

@@ -2,6 +2,8 @@ import generatePage1 from "./generatePage1";
 import generatePage2 from "./generatePage2";
 import generatePage3 from "./generatePage3";
 import generatePage4 from "./generatePage4";
+import AOS from "aos";
+
 
 
 
@@ -36,7 +38,7 @@ let home = document.getElementById("home");
 let about = document.getElementById("about");
 let menu = document.getElementById("menu");
 let contact = document.getElementById("contact");
-let page1Container = document.getElementById("page1Container");
+// let page1Container = document.getElementById("page1Container");
 let page2Container = document.getElementById("page2Container");
 let page3Container = document.getElementById("page3Container");
 let page4Container = document.getElementById("page4Container");
@@ -87,55 +89,17 @@ tabFunction();
 
 
 
-
-// content animation
-
+//  AOS 
 
 
-function scrollTrigger(selector, options = {}){
-  let els = document.querySelectorAll(selector)
-  els = Array.from(els)
-  els.forEach(el => {
-      addObserver(el, options)
-  })
-}
 
-function addObserver(el, options){
-  if(!('IntersectionObserver' in window)){
-      if(options.cb){
-          options.cb(el)
-      }else{
-          entry.target.classList.add('active')
-      }
-      return
-  }
-  let observer = new IntersectionObserver((entries, observer) => { //this takes a callback function which receives two arguments: the elemts list and the observer instance
-      entries.forEach(entry => {
-          if(entry.isIntersecting){
-              if(options.cb){
-                  options.cb(el)
-              }else{
-                  entry.target.classList.add('active')
-              }
-              observer.unobserve(entry.target)
-          }
-      })
-  }, options)
-  observer.observe(el)
-}
-// Example usages:
-scrollTrigger('.intro-text')
+AOS.init({
+    offset: 200, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 1000 // values from 0 to 3000, with step 50ms
+});
 
-scrollTrigger('.scroll-reveal', {
-  rootMargin: '-200px',
-})
 
-scrollTrigger('.loader', {
-  rootMargin: '-200px',
-  cb: function(el){
-      el.innerText = 'Loading...'
-      setTimeout(() => {
-          el.innerText = 'Task Complete!'
-      }, 1000)
-  }
-})
+//  AOS
+
+

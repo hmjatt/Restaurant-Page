@@ -22,7 +22,7 @@ function generatePage3() {
 
         <section>
 
-            <div class="item" id="item1">
+            <div class="item" id="item1" data-aos="zoom-out-right">
                 <div class="itemImg">
                     <img src="../src/images/items/ramen-item.png" alt="ramen">
                 </div>
@@ -42,7 +42,7 @@ function generatePage3() {
                 </div>
             </div>
 
-            <div class="item" id="item2">
+            <div class="item" id="item2" data-aos="zoom-out-left">
                 <div class="itemImg">
                     <img src="../src/images/items/sushi-item.png" alt="sushi">
                 </div>
@@ -62,7 +62,7 @@ function generatePage3() {
                 </div>
             </div>
 
-            <div class="item" id="item3">
+            <div class="item" id="item3" data-aos="zoom-out-right">
                 <div class="itemImg">
                     <img src="../src/images/items/takoyaki-item.png" alt="takoyaki">
                 </div>
@@ -82,7 +82,7 @@ function generatePage3() {
                 </div>
             </div>
 
-            <div class="item" id="item4">
+            <div class="item" id="item4" data-aos="zoom-out-left">
                 <div class="itemImg">
                     <img src="../src/images/items/onigiri-item.png" alt="onigiri">
                 </div>
@@ -102,7 +102,7 @@ function generatePage3() {
                 </div>
             </div>
 
-            <div class="item" id="item5">
+            <div class="item" id="item5" data-aos="zoom-out-right">
                 <div class="itemImg">
                     <img src="../src/images/items/noodle-item.png" alt="Udon">
                 </div>
@@ -122,7 +122,7 @@ function generatePage3() {
                 </div>
             </div>
 
-            <div class="item" id="item6">
+            <div class="item" id="item6" data-aos="zoom-out-left">
                 <div class="itemImg">
                     <img src="../src/images/items/green-tea-item.png" alt="green-tea">
                 </div>

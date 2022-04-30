@@ -173,49 +173,59 @@ function generatePage1() {
     let sectionFooterEle = document.createElement("section");
     sectionFooterEle.id = "page1Footer";
 
-    let footItem1 = document.createElement("div");
-    footItem1.id = "footItem1";
-    let footItem1H3 = document.createElement("h3");
-    footItem1H3.innerText = "18912"
-    let footItem1H6 = document.createElement("h6");
-    footItem1H6.innerText = "Orders Delivered";
+    sectionFooterEle.innerHTML =     `
+                                        <div id="footItem1" data-aos="flip-up"><h3>18912</h3><h6>Orders Delivered</h6></div>
+                                        <div id="footItem2" data-aos="flip-down"><h3><span>4.6</span><img src="../src/images/svg/star.svg" alt="rating-star"></h3><h6>Google Score</h6></div>
+                                        <div id="footItem3" data-aos="flip-up"><h3>456</h3><h6>Orders this week</h6></div>
+                                        <div id="footItem4" data-aos="flip-down"><h3>97 %</h3><h6>Natural products we use</h6></div>
+                                    `;
 
-    footItem1.append(footItem1H3, footItem1H6);
+    // let footItem1 = document.createElement("div");
+    // footItem1.id = "footItem1";
+    // let footItem1H3 = document.createElement("h3");
+    // footItem1H3.innerText = "18912"
+    // let footItem1H6 = document.createElement("h6");
+    // footItem1H6.innerText = "Orders Delivered";
 
-    let footItem2 = document.createElement("div");
-    footItem2.id = "footItem2";
-    let footItem2H3 = document.createElement("h3");
-    let footItem2H3Span = document.createElement("span");
-    footItem2H3Span.innerText = "4.6";
-    let footItem2H3Img = document.createElement("img");
-    footItem2H3Img.src = "../src/images/svg/star.svg";
-    footItem2H3Img.alt = "rating-star";
-    footItem2H3.append(footItem2H3Span, footItem2H3Img);
-    let footItem2H6 = document.createElement("h6");
-    footItem2H6.innerText = "Google Score";
+    // footItem1.append(footItem1H3, footItem1H6);
 
-    footItem2.append(footItem2H3, footItem2H6);
+    // let footItem2 = document.createElement("div");
+    // footItem2.id = "footItem2";
+    // let footItem2H3 = document.createElement("h3");
+    // let footItem2H3Span = document.createElement("span");
+    // footItem2H3Span.innerText = "4.6";
+    // let footItem2H3Img = document.createElement("img");
+    // footItem2H3Img.src = "../src/images/svg/star.svg";
+    // footItem2H3Img.alt = "rating-star";
+    // footItem2H3.append(footItem2H3Span, footItem2H3Img);
+    // let footItem2H6 = document.createElement("h6");
+    // footItem2H6.innerText = "Google Score";
 
-    let footItem3 = document.createElement("div");
-    footItem3.id = "footItem3";
-    let footItem3H3 = document.createElement("h3");
-    footItem3H3.innerText = "456";
-    let footItem3H6 = document.createElement("h6");
-    footItem3H6.innerText = "Orders this week";
+    // footItem2.append(footItem2H3, footItem2H6);
 
-    footItem3.append(footItem3H3, footItem3H6);
+    // let footItem3 = document.createElement("div");
+    // footItem3.id = "footItem3";
+    // let footItem3H3 = document.createElement("h3");
+    // footItem3H3.innerText = "456";
+    // let footItem3H6 = document.createElement("h6");
+    // footItem3H6.innerText = "Orders this week";
 
-    let footItem4 = document.createElement("div");
-    footItem4.id = "footItem4";
-    let footItem4H3 = document.createElement("h3");
-    footItem4H3.innerText = "97 %";
-    let footItem4H6 = document.createElement("h6");
-    footItem4H6.innerText = "Natural products we use";
+    // footItem3.append(footItem3H3, footItem3H6);
 
-    footItem4.append(footItem4H3, footItem4H6);
+    // let footItem4 = document.createElement("div");
+    // footItem4.id = "footItem4";
+    // let footItem4H3 = document.createElement("h3");
+    // footItem4H3.innerText = "97 %";
+    // let footItem4H6 = document.createElement("h6");
+    // footItem4H6.innerText = "Natural products we use";
+
+    // footItem4.append(footItem4H3, footItem4H6);
 
 
-    sectionFooterEle.append(footItem1, footItem2, footItem3, footItem4);
+    // sectionFooterEle.append(footItem1, footItem2, footItem3, footItem4);
+
+
+
 
     //-------for sectionFooterEle-------//
 
