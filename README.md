@@ -8,7 +8,7 @@ A Restaurant Home Page rendered using Webpack. This project is created to practi
 
 
 
-[Live Preview](https://hmjatt.github.io/Webpack-Starter/)
+[Live Preview](https://hmjatt.github.io/Restaurant-Page/)
 
 
 
