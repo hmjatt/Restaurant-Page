@@ -50,6 +50,7 @@ nav {
     background-color: var(--livid-brown-light-2);
     color: var(--white);
     display: flex;
+	width: 100vw;
     padding: 70px 0px 70px 0px;
     z-index: 1;
 }
@@ -527,11 +528,12 @@ footer {
 
     nav {
         padding: 20px 0px 20px 0px;
+		/* width: 100vw; */
     }
 
-    .sticky {
+    /* .sticky {
         width: 100vw;
-    }
+    } */
 
     #navLeft, #navRight, #navMiddle {
         padding-left: 0px;
@@ -642,6 +644,10 @@ footer {
 
 
 @media(max-width:600px) {
+
+	/* nav {
+		width: 100vw;
+	} */
 
     #page2Container aside {
         padding: 0px 10px 0px 10px;
