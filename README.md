@@ -1,15 +1,12 @@
 # Restaurant-Page
 
+
+## [Live Preview](https://hmjatt.github.io/Restaurant-Page/)
+
 ![This is an image](https://raw.githubusercontent.com/hmjatt/hmjatt.github.io/master/images/Restaurant-Page-1.png)
 
 
-
 A Restaurant Home Page rendered using Webpack. This project is created to practice Webpack. Feel free to reach me at [Twitter](https://twitter.com/hmjatt/)
-
-
-
-[Live Preview](https://hmjatt.github.io/Restaurant-Page/)
-
 
 
 ### Technologies Used
