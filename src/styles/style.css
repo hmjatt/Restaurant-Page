@@ -40,11 +40,11 @@ h2 {
     font-size: 60px;
 }
 
-.sticky {
+/* .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-}
+} */
 
 nav {
     background-color: var(--livid-brown-light-2);
