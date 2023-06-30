@@ -4,6 +4,8 @@
   "description": "Restaurant App",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
@@ -16,8 +18,9 @@
   "bugs": {
     "url": "https://github.com/hmjatt/Restaurant-Page/issues"
   },
-  "homepage": "https://github.com/hmjatt/Restaurant-Page#readme",
+  "homepage": "https://hmjatt.github.io/Restaurant-Page",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.10.0"
   },
